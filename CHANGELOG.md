@@ -1,5 +1,9 @@
 # CORE SENSOR - Core Body Temperature Service Specification
 
+## Changelog for the version 2.1
+
+In order to conveniently access the heart rate value that the CORE sensor receives from a paired heart rate monitor, we changed the Core Body Temperature characteristic. The current value of the heart rate [BPM] is added along with the live values for the temeperature.
+
 ## Changelog for the version 2.0
 
 There are some notable changes in the control point characteristic (UUID 00002102-5B1E-4347-B07C-97B514DAE121).

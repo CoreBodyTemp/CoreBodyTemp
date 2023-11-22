@@ -26,7 +26,7 @@ Some notes that might help to implement the bluetooth profile of CORE can be fou
 
 ### **Q:** Where can I find more developer notes?
 
-**A:** Please visit our developer notes on https://corebodytemp.com/pages/core-developer-notes
+**A:** Please visit our developer notes on https://corebodytemp.com/pages/tech-core-developer-information
 
 ### **Q:** How can I Bluetooth discover a CORE sensor?
 
