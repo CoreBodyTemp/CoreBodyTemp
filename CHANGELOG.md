@@ -1,14 +1,16 @@
-# CORE SENSOR - Core Body Temperature Service Specification
+# CORE SENSOR - Changelogs
 
-## Changelog for the version 2.1
+## Core Body Temperature Service Specification
+
+### Changelog for the version 2.1
 
 In order to conveniently access the heart rate value that the CORE sensor receives from a paired heart rate monitor, we changed the Core Body Temperature characteristic. The current value of the heart rate [BPM] is added along with the live values for the temeperature.
 
-## Changelog for the version 2.0
+### Changelog for the version 2.0
 
 There are some notable changes in the control point characteristic (UUID 00002102-5B1E-4347-B07C-97B514DAE121).
 
-### changes for Control Point OpCodes
+**changes for Control Point OpCodes**
 
 | OpCode          | HRM type | kind    | description                                                                                                                                                     |
 | --------------- | -------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -25,3 +27,24 @@ There are some notable changes in the control point characteristic (UUID 0000210
 | `0x10`          | BLE      | new     | Get MAC of scanned BLE heart rate monitor at index _i_.                                                                                                         |
 | `0x11`          | BLE      | new     | Clear list of BLE paired heart rate monitors.                                                                                                                   |
 | `0x12`          | BLE      | new     | Get MAC and status of paired BLE heart rate monitor at index _i_.                                                                                               |
+
+## CORE SENSOR - General Bluetooth specification
+only relevant BLE interface changes are documented.
+
+### Changelog firmware version 0.8.4 (2023-11-10)
+- support `COre Body Temperature Service` (v2.1)
+
+### Changelog firmware version 0.8.3 (2023-10-09)
+- support `COre Body Temperature Service` (v2.0)
+
+### Changelog firmware version 0.8.1 (2023-06-20)
+- allow up to 3 simultaneous BLE connections (with some restrictions)
+
+### Changelog firmware version 0.8.0 (2023-02-17)
+- support `Core Body Temperature Service` (v1.2)
+- allow up to 2 simultaneous BLE connections (with some restrictions)
+- new advertisement packet structure, as described in v2.1 of `CORE BLE Implementation Notes.pdf`
+- device name fixed as "CORE AB:CD" (last 2 hex digits)
+
+### Changelog firmware version 0.6.1 (2021-11-29)
+- support  `Core Body Temperature Service` (v1.0)
