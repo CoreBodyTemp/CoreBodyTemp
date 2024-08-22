@@ -1,6 +1,19 @@
 # CORE SENSOR - Changelogs
 
+2024-08-22 - Replace "CORE BLE Implementation Notes.pdf" with ["CORE Connectivity Implementation Notes"](/CORE%20Connectivity%20Implementation%20Notes.pdf). This document includes implementation notes about CORE BLE, ANT+ communication and CORE data in FIT files.
+
 ## Core Body Temperature Service Specification
+
+### Changelog for the version 2.1
+
+Compatible Firmware version: 0.8.7 and higher.
+
+- CORE Heat Strain Index is now included in the payload of the Core Body Temperature characteristic.
+- The CoreTemp Control Point characteristic has been extended with a new OpCode 0x13 to send an external heart rate value to the sensor. This is can be used to send heart rate measurements from an internal heart rate sensor of the client device to CORE, so that CORE does not need to be paired to an external heart rate monitor.
+
+| OpCode          | Definition    |
+|--|--|
+| `0x13`          | Send external heart rate value to CORE. |
 
 ### Changelog for the version 2.1
 
@@ -31,11 +44,15 @@ There are some notable changes in the control point characteristic (UUID 0000210
 ## CORE SENSOR - General Bluetooth specification
 only relevant BLE interface changes are documented.
 
+### Changelog firmware version 0.8.7 (2024-03-19)
+- Added Heat Strain Index to live data broadcast
+- Add OpCode 0x13 to manually send heart rate data over CORE BLE Service
+
 ### Changelog firmware version 0.8.4 (2023-11-10)
-- support `COre Body Temperature Service` (v2.1)
+- support `Core Body Temperature Service` (v2.1)
 
 ### Changelog firmware version 0.8.3 (2023-10-09)
-- support `COre Body Temperature Service` (v2.0)
+- support `Core Body Temperature Service` (v2.0)
 
 ### Changelog firmware version 0.8.1 (2023-06-20)
 - allow up to 3 simultaneous BLE connections (with some restrictions)
