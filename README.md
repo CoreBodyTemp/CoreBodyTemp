@@ -20,7 +20,7 @@ Please find the specification of our custom Bluetooth Low Energy GATT service "C
 
 Some notes that might help to implement the bluetooth profile of CORE can be found here:
 
-- [CORE BLE Implementation Notes.pdf](https://github.com/CoreBodyTemp/CoreBodyTemp/blob/main/CORE%20BLE%20Implementation%20Notes.pdf)
+- [CORE BLE Implementation Notes.pdf](https://github.com/CoreBodyTemp/CoreBodyTemp/blob/main/CORE%20Connectivity%20Implementation%20Notes.pdf)
 
 ## FAQ
 
